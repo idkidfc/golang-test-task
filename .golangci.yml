@@ -1,0 +1,19 @@
+linters:
+  enable:
+    - gofmt
+    - golint
+    - govet
+    - errcheck
+    - staticcheck
+    - ineffassign
+    - unused
+    - misspell
+
+issues:
+  exclude-use-default: false
+  exclude:
+    - should have comment or be unexported
+
+run:
+  deadline: 5m
+  tests: true

@@ -1,4 +1,4 @@
-package service
+package external
 
 import (
 	"context"
@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-type ExternalService interface {
+type Service interface {
 	GetLimits() (n uint64, p time.Duration)
 	Process(ctx context.Context, batch domain.Batch) error
 }
